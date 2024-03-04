@@ -1,0 +1,121 @@
+body {
+  background-image: url('/images/background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Additional styles for main.handlebars optimizations */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-dark {
+  background-color: #181a1d !important;
+}
+
+.text-white {
+  color: #f8f9fa !important;
+}
+
+/* Dark theme styles for cards in homePage.handlebars */
+.dark-card {
+  background-color: #333; /* Dark background for the card */
+  color: #ddd; /* Light text for better readability */
+}
+
+.dark-card-header {
+  background-color: #555; /* Slightly lighter than the card background for distinction */
+  color: #fff; /* White text for the title */
+}
+
+.dark-card-link {
+  color: #fff; /* White text for links to ensure readability */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.dark-card-link:hover {
+  color: #bbb; /* Lighter shade for hover effect */
+}
+
+.dark-card-body {
+  color: #ccc; /* Slightly lighter text color for body content */
+}
+
+/* Dark theme styles for dashboard.handlebars */
+
+.btn-secondary {
+  background-color: #6c757d; /* More muted button color */
+}
+
+.post-container {
+  background-color: #242424; /* Dark background for posts */
+  border-color: #343a40; /* Slightly lighter border for definition */
+}
+
+.post-title a {
+  color: #ffffff; /* Ensuring title links are white for readability */
+}
+
+a.text-decoration-none.text-light:hover {
+  color: #ccc; /* Lighter color on hover for interaction feedback */
+}
+
+.btn-outline-info, .btn-outline-danger {
+  margin-right: 10px; /* Spacing between buttons */
+}
+
+/* Additional styling for spacing and alignment */
+.container {
+  padding-bottom: 100px; /* To prevent footer overlap */
+}
+
+/* Dark theme styles for editpost.handlebars */
+
+.form-control.bg-secondary {
+  background-color: #495057; /* Slightly lighter dark for input backgrounds */
+  color: #ffffff; /* White text for contrast */
+  border: 1px solid #ced4da; /* Subtle border for inputs */
+}
+
+.form-control.bg-secondary:focus {
+  background-color: #495057; /* Maintain background color on focus */
+  border-color: #adb5bd; /* Lighter border on focus */
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Custom focus shadow */
+}
+
+.btn-outline-info, .btn-outline-danger {
+  color: #fff; /* White text for buttons */
+  border-color: #6c757d; /* Border color to match the dark theme */
+}
+
+.btn-outline-info:hover, .btn-outline-danger:hover {
+  color: #212529; /* Dark text on hover */
+  background-color: #fff; /* White background on hover */
+}
+
+/* Dark theme styles for login.handlebars */
+
+.form-control.bg-secondary {
+  background-color: #495057; /* Dark background for input fields */
+  color: #ffffff; /* White text for contrast */
+  border: 1px solid #ced4da; /* Subtle border */
+}
+
+.btn-outline-light {
+  color: #ffffff; /* White text for button */
+  border-color: #f8f9fa; /* Light border for button */
+}
+
+.btn-outline-light:hover {
+  color: #343a40; /* Dark text on hover for contrast */
+  background-color: #f8f9fa; /* Light background on hover */
+}
+
+/* Dark theme styles for post.handlebars */
+
+.text-secondary {
+  color: #6c757d !important; /* Secondary text for less emphasis */
+}
