@@ -1,0 +1,18 @@
+<main class="container mt-5 text-white">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="mb-4">Dashboard</h1>
+      <a href="/newpost" class="btn btn-secondary">Create a New Blog Post</a>
+    </div>
+  </div>
+  <br>
+  <h2 class="mb-4">Your Contributions:</h2> 
+  {{#each posts}}
+    <div class="post-container mb-3 bg-dark p-3 border border-secondary rounded">
+      <h3 class="post-title"><a href="/post/{{id}}" class="text-decoration-none text-light">{{title}}</a></h3> 
+      <p class="text-secondary">Created by {{user.username}} on {{format_date createdAt}}</p> 
+      <a href="/editpost/{{id}}" class="btn btn-outline-info">Edit Post</a> 
+      <button class="btn btn-outline-danger delete-post" data-post-id="{{id}}">Delete</button>
+    </div>
+  {{/each}}
+</main>

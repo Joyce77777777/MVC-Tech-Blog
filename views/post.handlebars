@@ -1,0 +1,34 @@
+<main class="container mt-5 text-white">
+  <article class="bg-dark p-3 rounded">
+    <h1 class="text-white">{{title}}</h1>
+    <p class="text-secondary">Created by {{user.username}} on {{format_date createdAt}}</p>
+    <p class="text-white">{{content}}</p>
+  </article>
+  {{#if logged_in}}
+    <form class="new-comment-form mb-3 bg-dark p-3 rounded" class="mb-3">
+      <div class="mb-3">
+        <label for="comment" class="form-label text-white">Add Comment</label>
+        <textarea
+          class="form-control bg-secondary text-white"
+          id="content-new-comment"
+          rows="3"
+          placeholder="Add a comment..."
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-info">Submit</button>
+    </form>
+  {{/if}}
+  <h2 class="text-white mt-4">Comments</h2>
+  {{#if comments.length}}
+    {{#each comments}}
+      <div class="comment mb-3 bg-dark p-3 rounded">
+        <p class="text-white">{{comment_text}}</p>
+        <p class="text-white">By {{user.username}} on {{format_date createdAt}}</p>
+      </div>
+    {{/each}}
+  {{else}}
+    <div class="no-comments bg-dark text-white p-3 rounded">
+      No comments yet. Be the first to comment!
+    </div>
+  {{/if}}
+</main>

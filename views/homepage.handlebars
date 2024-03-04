@@ -1,0 +1,20 @@
+<main class="container mt-5">
+  <h1 class="mb-4 text-white">Blog Posts</h1>
+  <div class="row">
+    {{#each posts}}
+      <div class="col-12">
+        <div class="card mb-3 dark-card">
+          <div class="card-header dark-card-header d-flex justify-content-between align-items-center">
+            <h2 class="card-title mb-0">
+              <a href="/post/{{id}}" class="dark-card-link">{{title}}</a>
+            </h2>
+            <small class="text-white">Created by {{user.username}} on {{format_date createdAt}}</small>
+          </div>
+          <div class="card-body dark-card-body">
+            <p>{{content}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</main>
