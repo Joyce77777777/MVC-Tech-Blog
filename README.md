@@ -86,3 +86,7 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 - sequelize
 
 For a full list of dependencies, refer to the `package.json` file.
+
+## Repo Location
+
+This project is located here: https://github.com/Joyce77777777/MVC-Tech-Blog/
