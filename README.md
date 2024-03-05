@@ -3,6 +3,10 @@
 ## Description
 A CMS-style blog site where developers can publish their blog posts and comment on other developers' posts. This application is built from scratch and deployed to Heroku, following the MVC paradigm in its architectural structure. It uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
+## Demo Link
+
+This application is currently deployed here: https://mvc-tech-blog-demo-6fc1bf47e7d3.herokuapp.com/
+
 ## User Story
 
 ```
